@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html lang="pl">
 
@@ -53,28 +56,20 @@
                     <p>514 *** ***</p>
                     <p><a href="https://pl-pl.facebook.com/damian.filipiak.31" target="_blank">Mój fb</a></p>
                 </div>
-                <button  id="btnForm">Formularz</button>
-                <div id="contact_form_div">
-                    <form method="post" name="contactform" action="mail.php">
-                        <div class="contact_form_field">
-                            <label for="name">Imię</label>
-                            <input type="text" name="name" id="name" required/>
-                        </div>
-                        <div class="contact_form_field">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required/>
-                        </div>
-                        <div class="contact_form_field">
-                            <label for="message">Wiadomość</label>
-                            <textarea name="message" id="message" rows="4" required></textarea>
-                        </div>
-                        <div class="contact_form_field">
-                            <ul class="actions">
-                                <li><input type="submit" name="submit" value="Wyślij"/></li>
-                                <li><input type="reset" value="Reset"/></li>
-                            </ul>
-                        </div>
-                    </form>
+                <div id="contact_wyslane_div">
+                <?php
+                    $to = 'damfil06572@gmail.com';
+                    $name = $_POST['name'];
+                    $email = $_POST['email'];
+                    $subject = 'Nowy email od ' . $name . ' (' . $email . ')';
+                    $message = $_POST['message'];
+                    $headers = 'From: ' . $name . ' (' . $email . ')';
+                    $headers .= "Content-Type: text/html, charset=utf-8\r\n";
+
+                    mail($to, $subject, $message, $headers);
+                    
+                    echo 'Wysłano';
+                    ?>
                 </div>
             </article>
         </section>

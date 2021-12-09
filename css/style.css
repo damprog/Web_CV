@@ -195,13 +195,14 @@ a.inspirations p {
 /* Strona z menu: Kontakt */
 article.contact {
     overflow: hidden;
+    text-align: center;
+    height: fit-content;
 }
 
-article.contact div {
-    display: block;
+div#contact_way {
+    float:left;
+    padding: 3px;
     width: 50%;
-    float: left;
-    padding: 5px;
 }
 
 div#contact_way p {
@@ -210,6 +211,79 @@ div#contact_way p {
     float: right;
 }
 
+div#contact_data {
+    float:left;
+    width: 50%;
+    padding: 3px;
+}
+
+#btnForm{
+    width: 75px;
+    height: 50px;
+    border-radius: 10%;
+    border: snow solid 3px;
+    font-size: 14px;
+    color: rgba(255, 248, 248, 0.986);
+    background-color: rgb(50, 50, 50);
+}
+
+div#contact_form_div {
+    width: 280px;
+    height: 0px;
+    visibility: hidden;
+    text-align: left;
+    border: rgb(206, 205, 205) solid 4px;
+    border-radius: 5%;
+}
+
+div.contact_form_field input,
+div.contact_form_field textarea {
+    width: 200px;
+    border-radius: 4%;
+    font-size: 16px;
+    resize: none;
+}
+
+div.contact_form_field input{
+    height: 30px;
+}
+
+div.contact_form_field label{
+    font-size: 20px;
+}
+
+div.contact_form_field {
+    display:block;
+    width: 100%;
+    margin: auto;
+    padding-top: 2vh;
+
+}
+
+div.contact_form_field li {
+    list-style: none;
+}
+
+div.contact_form_field  li  input {
+    width: 80px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 15%;
+    border: snow solid 3px;
+    font-size: 14px;
+    color: rgba(255, 248, 248, 0.986);
+    background-color: rgb(50, 50, 50);
+}
+
+div#contact_wyslane_div {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+    color: lime;
+    margin: auto;
+    padding: 50px;
+}
 
 /* Podstrony */
 
