@@ -382,6 +382,11 @@ div#source_div p {
     visibility: hidden;
 }
 
+div#source_div p a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+
 
 
 /* Footer */
