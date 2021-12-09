@@ -217,6 +217,12 @@ div#contact_data {
     padding: 3px;
 }
 
+div#contact_data a {
+    text-decoration: none;
+    color:rgb(126, 132, 138);
+    border: slategrey 1px solid;
+}
+
 #btnForm{
     width: 75px;
     height: 50px;
@@ -228,7 +234,7 @@ div#contact_data {
 }
 
 div#contact_form_div {
-    width: 280px;
+    width: 380px;
     height: 0px;
     visibility: hidden;
     text-align: left;
@@ -238,7 +244,7 @@ div#contact_form_div {
 
 div.contact_form_field input,
 div.contact_form_field textarea {
-    width: 200px;
+    width: 300px;
     border-radius: 4%;
     font-size: 16px;
     resize: none;
@@ -352,6 +358,30 @@ figure.photo_gallery:hover {
 }
 
 /* Podstrona strony Inspirations: Zrodla wiedzy */
+div#source_div {
+text-align: center;
+text-justify: auto;
+}
+
+div#source_div li {
+    border-top:tomato 1px solid;
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+    display: block;
+    margin: 2px 0;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div#source_div p {
+    width: 80%;
+    height: 0;
+    margin-left: 20%;
+    visibility: hidden;
+}
+
 
 
 /* Footer */
@@ -362,6 +392,10 @@ footer {
     text-align: center;
     line-height: 40px;
     margin-top: 10px;
+}
+
+footer h6 {
+    background-color: rgb(139, 143, 146);
 }
 
 /* Responsywność */

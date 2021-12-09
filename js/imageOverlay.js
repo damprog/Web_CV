@@ -1,7 +1,7 @@
     var myImgs = document.querySelectorAll('img');
 
 
-   myImgs.forEach(item =>{
+    myImgs.forEach(item =>{
     item.addEventListener('click', function(evt){
         // creating a overlay
         var myOverlay = document.createElement('div');
@@ -21,19 +21,20 @@
 
         // centering img
 
+        
+        if(window.innerHeight<=img.height){
+            var k_scale = window.innerHeight/img.height;
+            img.style.scale = k_scale;
+        }
         if(window.innerWidth<=img.width){
             var k_scale = window.innerWidth/img.width;
             img.style.scale = k_scale;
-            var y = (window.innerHeight - img.height)/2;
-            var x = (window.innerWidth - img.width)/2;
-            img.style.left = (x) + 'px';
-            img.style.top = (y) + 'px';
-        }else{
-            var x = (window.innerWidth - img.width)/2;
-            var y = (window.innerHeight - img.height)/2;
-            img.style.left = (x) + 'px';
-            img.style.top = (y) + 'px';
         }
+        var x = (window.innerWidth - img.width)/2;
+        var y = (window.innerHeight - img.height)/2;
+        img.style.left = (x) + 'px';
+        img.style.top = (y) + 'px';
+        
         img.style.position = "absolute";
 
         // adding img to overlay

@@ -1,6 +1,3 @@
-
-
-
 <!doctype html>
 <html lang="pl">
 
@@ -67,7 +64,7 @@
                     $headers .= "Content-Type: text/html, charset=utf-8\r\n";
 
                     mail($to, $subject, $message, $headers);
-                    
+
                     echo 'Wysłano';
                     ?>
                 </div>
@@ -75,6 +72,7 @@
         </section>
         <footer>
             Pozdrawiam i zapraszam ponownie! :-)
+            <h6>Copyright© 2021-2022 Damian Filipiak. Wszelkie prawa zastrzeżone</h6>
         </footer>
     </div>
 </body>
