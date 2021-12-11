@@ -70,6 +70,7 @@ nav a.menu{
     float: left;
     width: 25%;
     padding: 15px 30px;
+    text-decoration: none;
     color: white;
     text-align: center;
     font-size: 18px;
@@ -186,22 +187,94 @@ article.projects p {
 }
 
 
-article.projects img#OF_App {
+article.projects div#OF_App_img {
     display: block;
+    text-align: center;
     float: right;
     width: 45%;
-    height: auto;
+    height: fit-content;
     float:right;
     margin-left: 15px;
     padding-right: 40px;
     padding-top: 15px;
 }
 
+article.projects div#OF_App_img img{
+    width: 100%;
+}
+
 article.projects p#OF_App {
     display: block;
-    min-height: 400px;
-        
+    min-height: 400px;       
 }
+
+article.projects div#tt_okno_glowne_img {
+    display: block;
+    text-align: center;
+    float: right;
+    width: 45%;
+    height: fit-content;
+    float:right;
+    margin-left: 15px;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+
+article.projects div#tt_okno_glowne_img img{
+    width: 100%;
+}
+
+article.projects p#tournament_tracker {
+    display: block;
+    min-height: 140px;  
+}
+
+article.projects div.tt_images {
+    display: block;
+    width: 55%;
+    height: fit-content;
+    padding: 15px 40px;
+}
+
+article.projects div#tt_images img {
+    width: 32%;
+    padding: 5px;
+}
+
+article.projects div#hr_okno_glowne_img {
+    display: block;
+    text-align: center;
+    float: right;
+    width: 50%;
+    height: fit-content;
+    float:right;
+    margin-left: 15px;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+
+article.projects div#hr_okno_glowne_img img{
+    width: 100%;
+}
+
+article.projects p#human_resources {
+    display: block;
+    min-height: 120px;       
+}
+
+article.projects div.hr_images {
+    display: block;
+    width: 50%;
+    height: fit-content;
+    padding: 0 40px;
+}
+
+article.projects div#hr_images img {
+    width: 48%;
+    padding: 5px;
+}
+
+
 
 /* Strona z menu: Inspiracje */
 article.inspirations {
@@ -522,6 +595,10 @@ footer h6 {
         border-bottom: 1px solid crimson;
         margin-bottom: 15px;
         margin-left: 5px;
+    }
+
+    article.projects div.project_images_div {
+        width: 100%;
     }
 
     a.inspirations {

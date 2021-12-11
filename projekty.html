@@ -65,10 +65,12 @@
                     <h2>Aplikacje</h2>
                     <p>Na ten moment posiadam tylko jeden projekt niedokończonej aplikacji.</p>
                     <br /><hr style="border: dotted;"><br />
-                    <img id="OF_App" src="img/projects/OFF_App.jpg" alt="OF_App"/>
+                    <div id="OF_App_img">
+                        <img src="img/projects/OF_App.jpg" alt="OF_App picture"/>
+                    </div>
                     <p id="OF_App">
-                        Optical Fiber App -  Pracuję nad nią w wolnym czasie. 
-                        Docelowo aplikacja ma służyć do ułatwienia pracy przy światłowodach. Będzie ona posiadała możliwość zapisywania postępów
+                        Optical Fiber App (Java) - Docelowo aplikacja ma służyć do ułatwienia pracy przy światłowodach. Pracuję nad nią w wolnym czasie. 
+                        Będzie ona posiadała możliwość zapisywania postępów
                         pracy nad określonym projektem. Głównie chodzi o zapisywanie ilości użytego materiału oraz jego rodzaju. 
                         Istotnym elementem będzie możliwość przeglądania postępu prac oraz tworzeniu raportów przez osobę odpowiedzialną za projekt.
                         Raport będzie tworzony na podstawie informacji wprowadzonych przez monterów lini światłowodowych.
@@ -79,15 +81,34 @@
                 </div>
                 <div id="programy_okienkowe_div">
                     <h2>Programy okienkowe</h2>
-                    <p>
-                        Tournament tracker - 
+                    <div id="tt_okno_glowne_img">
+                        <img src="/img/projects/TT_okno_glowne.jpg" alt="Tournament Tracker okno główne">
+                    </div>
+                    <p id="tournament_tracker">
+                        Tournament tracker (C#) - program, który tworzyłem na podstawie kursu w ramach nauki. Program służy do 
+                        przeprowadzania turniejów. Posiada zaprojektowaną logikę do przeprowadzania turnieju 
+                        rundowego.  
                     </p>
+                    <div id="tt_images" class="tt_images project_images_div">
+                        <img src="img/projects/TT_create_team.jpg" alt="tt_create_team">
+                        <img src="img/projects/TT_create_prize.jpg" alt="tt_create_prize">
+                        <img src="img/projects/TT_create_tournament.jpg" alt="tt_create_tournament">
+                    </div>
                     <br /><hr style="border: dotted;"><br />
-                    <p>
-                        Human Resources - program wykonany w C#, służy do zarządzania zasobami ludzkimi w 
-                        firmie. Posiada funkcje dodawania, usuwania pracowników, przydzielania ich do grup.
-                        Możliwa jest też konfiguracja grup pracowników. Program tworzyłem na podstawię yt w ramach nauki.
+                    <div id="hr_okno_glowne_img">
+                        <img src="/img/projects/HR_okno_glowne.jpg" alt="Human Resources program picture">
+                    </div>
+                    <p id="human_resources">
+                        Human Resources (C#) - służy do zarządzania zasobami ludzkimi w 
+                        firmie. Najważniejsze funkcje to dodawanie, usuwanie pracowników, ustalanie pensji, 
+                        a także zarządzanie działami. Możliwy jest również podgląd 
+                        zawieranych umów. 
+                        Program tworzyłem na podstawię yt w ramach nauki.
                     </p>
+                    <div id="hr_images" class="hr_images project_images_div">
+                        <img src="img/projects/HR_dodaj_pracownika.jpg" alt="hr_dodaj_pracownika">
+                        <img src="img/projects/HR_modyfikuj_pracownika.jpg" alt="hr_modyfikuj_pracownika">
+                    </div>
                     <br /><hr style="border: dotted;"><br />
                     <p>Tu pojawią się kolejne programy.</p>
                 </div>
@@ -100,5 +121,7 @@
     </div>
 
 </body>
+
+<script type="text/JavaScript" src="js/imageOverlay.js"></script>
 
 </html>
