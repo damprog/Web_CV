@@ -5,6 +5,7 @@
     font-weight: 100;
     box-sizing: border-box;
     scrollbar-color: #666 #333 ;
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
     width: 2em;
@@ -33,6 +34,10 @@ body {
 /* Header */
 header {
     overflow: hidden;
+}
+
+a {
+    color:rgb(70, 70, 70);
 }
 
 .fb {
@@ -66,7 +71,6 @@ nav a.menu{
     width: 25%;
     padding: 15px 30px;
     color: white;
-    text-decoration: none;
     text-align: center;
     font-size: 18px;
     -webkit-transition: all 0.3s ease;
@@ -76,7 +80,6 @@ nav a.menu{
 
  ul.podmenu_project {
     display: block;
-    /* width: 15.625rem; */
     width: 250px;
     margin-top: 51px;
     margin-left: 250px;
@@ -121,11 +124,6 @@ nav a.active {
 }
 
 
-
-
-
-
-
 /* Ogólne article*/
 article {
     margin-top: 30px;
@@ -150,19 +148,60 @@ article p {
 }
 
 /* Strona z menu: O mnie */
-img#garnitur {
+
+div#garnitur_div {
     width: 35%;
     height: max-content;
-    padding: 0 10px 5px 20px;
+    padding: 0 10px 10px 20px;
     float: right;
     border-radius: 60% 0% 40%;
     border-bottom: 1px solid crimson;
     margin-bottom: 15px;
     margin-left: 5px;
+    clear: both;
+}
+
+img#garnitur {
+    width: 100%;
+    height: max-content;
+    border-radius: 60% 0% 40%;
+    border: 3px solid #fff;
+    box-shadow: -8px 8px 0em #fff,
+     8px -8px 0em rgb(70, 70, 70);
 }
 
 /* Strona z menu: Projekty */
 
+article.projects div{
+    justify-content: center;
+    text-justify: auto;
+    height:auto;
+
+}
+
+article.projects p {
+    display: block;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+
+article.projects img#OF_App {
+    display: block;
+    float: right;
+    width: 45%;
+    height: auto;
+    float:right;
+    margin-left: 15px;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+
+article.projects p#OF_App {
+    display: block;
+    min-height: 400px;
+        
+}
 
 /* Strona z menu: Inspiracje */
 article.inspirations {
@@ -266,12 +305,16 @@ div#contact_data a {
 }
 
 div#contact_form_div {
+    margin: auto;
     width: 380px;
     height: 0px;
     visibility: hidden;
     text-align: left;
     border: rgb(206, 205, 205) solid 4px;
     border-radius: 5%;
+    align-items: center;
+    align-content: center;
+    display: flex;
 }
 
 div.contact_form_field input,
@@ -437,24 +480,28 @@ footer h6 {
 
 /* Responsywność */
 
-@media(max-width:1012px) {
+@media (max-width: 1012px) {
     ul.podmenu_project {
         width: 25%;
         margin-left: 25%;
     }
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
     nav a.menu {
         width: 50%;
         font-size: 17px;
     }
 
     ul.podmenu_project {
-        width: 50vw;
-        margin-left: 50vw;
+        width: 50%;
+        margin-left: 50%;
         font-size: 17px;
-        margin-top: 47px;
+        margin-top: 50px;
+    }
+
+    nav ul.podmenu_project li a{
+        font-size: 17px;
     }
 
     article h1{
@@ -463,10 +510,10 @@ footer h6 {
         margin: 0 15% 20px;
         padding-bottom: 10px;
         border-bottom: 2px solid crimson;
-        border-bottom-left-radius: 8 px;
+        border-bottom-left-radius: 8px;
     }
 
-    img#garnitur {
+    div#garnitur_div {
         width: 50%;
         height: max-content;
         padding: 0 10px 5px 10px;
@@ -499,38 +546,26 @@ footer h6 {
     flex-basis: 100%;
     width: 100%;
     padding: 1px;
-}
+    }
 }
 
-@media (max-width:500px) {
+@media (max-width: 550px) {
     nav a.menu {
         width: 100%;
         font-size: 16px;
     }
 
     ul.podmenu_project {
-        width: 100vw;
-        margin-left: 0vw;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 97.9666px;
+    }
+
+    nav ul.podmenu_project li a{
         font-size: 16px;
-        margin-top: 46px;
     }
     
     article h1{
         font-size: 20px;
-        text-align: center;
-        margin: 0 15% 20px;
-        padding-bottom: 10px;
-        border-bottom: 2px solid crimson;
-        border-bottom-left-radius: 8 px;
-    }
-
-    a.inspirations {
-        display: block;
-        width: 100%;
-        float: left;
-        padding: 10px;
-        margin: auto;
-        text-align: center;
-        text-decoration: none;
     }
 }
