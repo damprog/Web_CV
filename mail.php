@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Damian Filipiak</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
@@ -35,10 +35,15 @@
             <img id="baner" src="img/zalew.jpg" alt="Zdjęcie nad zalewem">
         </header>
         <nav>
-            <a href="index.html" class="menu">O mnie</a>
-            <a href="projekty.html" class="menu">Projekty</a>
-            <a href="inspiracje.html" class="menu">Inspiracje</a>
-            <a href="#" class="menu active">Kontakt</a>
+            <a href="index.html" class="menu" id="about_me_menu_item">O mnie</a>
+            <a href="projekty.html" class="menu" id="project_menu_item">Projekty</a>
+            <ul class="podmenu_project">
+                <li><a href="#strony_internetowe_div">Witryny internetowe</a></li>
+                <li><a href="#aplikacje_div">Aplikacje</a></li>
+                <li><a href="#programy_okienkowe_div">Programy okienkowe</a></li>
+            </ul>
+            <a href="inspiracje.html" class="menu" id="inspirations_menu_item">Inspiracje</a>
+            <a href="#" class="menu active" id="contact_menu_item">Kontakt</a>
         </nav>
         <section>
             <article class="contact">
