@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Damian Filipiak</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
@@ -29,7 +30,14 @@
 </head>
 
 <body>
-
+    <div id="slider">
+        <div id = "container">
+            
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="close" onclick="quitSlides()">X</a>
+    </div>
     <div id="wrapper">
         <header>
             <img id="baner" src="img/zalew.jpg" alt="Zdjęcie nad zalewem">
@@ -51,13 +59,13 @@
             </article>
             <article id="gallery">
                 <figure class="photo_gallery">
-                    <img src="img/inspirations/lagoon.jpg" alt="dziewczyny na tle zalewu">
+                    <img src="img/inspirations/lagoon.jpg" alt="dziewczyny na tle zalewu" >
                     <figcaption>
                         Dziewczyny na tle zalewu
                     </figcaption>
                 </figure>
                 <figure class="photo_gallery">
-                    <img src="img/inspirations/sunset.jpg" alt="Zachód słońca - Kazimierz Dolny">
+                    <img src="img/inspirations/sunset.jpg" alt="Zachód słońca - Kazimierz Dolny" >
                     <figcaption>
                         Zachód słońca w Kazimierzu Dolnym
                     </figcaption>
@@ -170,6 +178,9 @@
                         Dolina orków, Mt2
                     </figcaption>
                 </figure>
+
+                
+
             </article>
         </section>
         <footer>
@@ -180,8 +191,9 @@
 
 </body>
 
-
-<script type="text/javascript" src="js/imageOverlay.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<!-- Używane wcześniej do wyświetlania obrazków -->
+<!-- <script type="text/javascript" src="js/imageOverlay.js"></script> -->
 
  
 

@@ -4,17 +4,19 @@
     font-family: arial;
     font-weight: 100;
     box-sizing: border-box;
-    scrollbar-color: #666 #333 ;
+    scrollbar-color: #666 #333;
     scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 2em;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     border-radius: 100vw;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     border-radius: 100vw;
 }
 
@@ -37,7 +39,7 @@ header {
 }
 
 a {
-    color:rgb(70, 70, 70);
+    color: rgb(70, 70, 70);
 }
 
 .fb {
@@ -64,7 +66,7 @@ nav {
     overflow: hidden;
 }
 
-nav a.menu{
+nav a.menu {
     background-color: rgb(70, 70, 70);
     display: block;
     float: left;
@@ -79,7 +81,7 @@ nav a.menu{
 }
 
 
- ul.podmenu_project {
+ul.podmenu_project {
     display: block;
     width: 250px;
     margin-top: 51px;
@@ -88,8 +90,10 @@ nav a.menu{
     text-align: center;
     visibility: hidden;
     position: absolute;
+    z-index: 100;
 }
-nav ul.podmenu_project li{
+
+nav ul.podmenu_project li {
     background-color: rgb(70, 70, 70);
     display: block;
     width: 100%;
@@ -98,7 +102,8 @@ nav ul.podmenu_project li{
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-nav ul.podmenu_project li a{
+
+nav ul.podmenu_project li a {
     text-decoration: none;
     color: white;
     width: inherit;
@@ -111,9 +116,9 @@ nav ul.podmenu_project li:hover {
     cursor: pointer;
 }
 
-#project_menu_item:hover + .podmenu_project,
-#project_menu_item:active + .podmenu_project,
-#project_menu_item:focus + .podmenu_project,
+#project_menu_item:hover+.podmenu_project,
+#project_menu_item:active+.podmenu_project,
+#project_menu_item:focus+.podmenu_project,
 .podmenu_project:hover,
 .podmenu_project:active,
 .podmenu_project:focus {
@@ -168,15 +173,15 @@ img#garnitur {
     border-radius: 60% 0% 40%;
     border: 3px solid #fff;
     box-shadow: -8px 8px 0em #fff,
-     8px -8px 0em rgb(70, 70, 70);
+        8px -8px 0em rgb(70, 70, 70);
 }
 
 /* Strona z menu: Projekty */
 
-article.projects div{
+article.projects div {
     justify-content: center;
     text-justify: auto;
-    height:auto;
+    height: auto;
 
 }
 
@@ -193,19 +198,19 @@ article.projects div#OF_App_img {
     float: right;
     width: 45%;
     height: fit-content;
-    float:right;
+    float: right;
     margin-left: 15px;
     padding-right: 40px;
     padding-top: 15px;
 }
 
-article.projects div#OF_App_img img{
+article.projects div#OF_App_img img {
     width: 100%;
 }
 
 article.projects p#OF_App {
     display: block;
-    min-height: 400px;       
+    min-height: 400px;
 }
 
 article.projects div#tt_okno_glowne_img {
@@ -214,19 +219,19 @@ article.projects div#tt_okno_glowne_img {
     float: right;
     width: 45%;
     height: fit-content;
-    float:right;
+    float: right;
     margin-left: 15px;
     padding-right: 40px;
     padding-top: 15px;
 }
 
-article.projects div#tt_okno_glowne_img img{
+article.projects div#tt_okno_glowne_img img {
     width: 100%;
 }
 
 article.projects p#tournament_tracker {
     display: block;
-    min-height: 140px;  
+    min-height: 140px;
 }
 
 article.projects div.tt_images {
@@ -247,19 +252,19 @@ article.projects div#hr_okno_glowne_img {
     float: right;
     width: 50%;
     height: fit-content;
-    float:right;
+    float: right;
     margin-left: 15px;
     padding-right: 40px;
     padding-top: 15px;
 }
 
-article.projects div#hr_okno_glowne_img img{
+article.projects div#hr_okno_glowne_img img {
     width: 100%;
 }
 
 article.projects p#human_resources {
     display: block;
-    min-height: 120px;       
+    min-height: 120px;
 }
 
 article.projects div.hr_images {
@@ -294,6 +299,7 @@ a.inspirations {
 a.inspirations p::first-letter {
     color: crimson;
 }
+
 a.inspirations p {
     position: absolute;
     margin: auto;
@@ -329,7 +335,7 @@ a.inspirations p {
 }
 
 #img-div img,
-#img-div1 img{
+#img-div1 img {
     width: 300px;
     height: 225px;
 }
@@ -344,7 +350,7 @@ article.contact {
 }
 
 div#contact_way {
-    float:left;
+    float: left;
     padding: 3px;
     width: 50%;
 }
@@ -356,18 +362,18 @@ div#contact_way p {
 }
 
 div#contact_data {
-    float:left;
+    float: left;
     width: 50%;
     padding: 3px;
 }
 
 div#contact_data a {
     text-decoration: none;
-    color:rgb(126, 132, 138);
+    color: rgb(126, 132, 138);
     border: slategrey 1px solid;
 }
 
-#btnForm{
+#btnForm {
     width: 75px;
     height: 50px;
     border-radius: 10%;
@@ -398,16 +404,16 @@ div.contact_form_field textarea {
     resize: none;
 }
 
-div.contact_form_field input{
+div.contact_form_field input {
     height: 30px;
 }
 
-div.contact_form_field label{
+div.contact_form_field label {
     font-size: 20px;
 }
 
 div.contact_form_field {
-    display:block;
+    display: block;
     width: 100%;
     margin: auto;
     padding-top: 2vh;
@@ -418,7 +424,7 @@ div.contact_form_field li {
     list-style: none;
 }
 
-div.contact_form_field  li  input {
+div.contact_form_field li input {
     width: 80px;
     height: 30px;
     margin-top: 5px;
@@ -437,6 +443,13 @@ div#contact_wyslane_div {
     color: lime;
     margin: auto;
     padding: 50px;
+}
+
+.google_maps {
+    border: grey 1px solid;
+}
+.contact iframe {
+    width: 100%;
 }
 
 /* Podstrony */
@@ -507,12 +520,12 @@ figure.photo_gallery:hover {
 
 /* Podstrona strony Inspirations: Zrodla wiedzy */
 div#source_div {
-text-align: center;
-text-justify: auto;
+    text-align: center;
+    text-justify: auto;
 }
 
 div#source_div li {
-    border-top:tomato 1px solid;
+    border-top: tomato 1px solid;
     text-align: left;
     width: 100%;
     height: fit-content;
@@ -573,11 +586,11 @@ footer h6 {
         margin-top: 50px;
     }
 
-    nav ul.podmenu_project li a{
+    nav ul.podmenu_project li a {
         font-size: 17px;
     }
 
-    article h1{
+    article h1 {
         font-size: 25px;
         text-align: center;
         margin: 0 15% 20px;
@@ -620,10 +633,11 @@ footer h6 {
     }
 
     figure.photo_gallery img {
-    flex-basis: 100%;
-    width: 100%;
-    padding: 1px;
+        flex-basis: 100%;
+        width: 100%;
+        padding: 1px;
     }
+
 }
 
 @media (max-width: 550px) {
@@ -638,11 +652,11 @@ footer h6 {
         margin-top: 97.9666px;
     }
 
-    nav ul.podmenu_project li a{
+    nav ul.podmenu_project li a {
         font-size: 16px;
     }
-    
-    article h1{
+
+    article h1 {
         font-size: 20px;
     }
 }
